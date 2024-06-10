@@ -1,0 +1,138 @@
+.sec{
+    border: 3px solid black;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(209, 208, 208);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px repeat(4, 500px);
+    height: 100vh;
+}
+
+#transition{
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 200%;
+    text-align: center;
+    align-content: center;
+    text-shadow: 1px 1px 2px gray;
+}
+
+#animation{
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 200%;
+    text-align: center;
+    align-content: center;
+    text-shadow: 1px 1px 2px gray;
+}
+
+#tr1{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#dtr1{
+    width: 100px;
+    height: 100px;
+    border-radius: 1em;
+    text-align: center;
+    align-content: center;
+    background-color: lightblue;
+    transition: all 2s ease-in-out 0s;
+}
+
+#dtr1:hover{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+#tr2{
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#dtr2{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    border: rgb(199, 240, 255) solid 3px;
+    border-radius: 0.25em;
+    box-shadow: 8px 8px 8px 0px #45090059;
+    cursor: pointer;
+    background-color: rgb(158, 224, 247);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#dtr2:hover{
+    width: 110px;
+    height: 60px;
+    box-shadow: none;
+}
+
+#dtr2:active{
+    width: 105px;
+    height: 55px;
+    background-color: rgb(71, 205, 253);
+}
+
+#tr3{
+    grid-column: 1;
+    grid-row: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#dtr3{
+    width: 50px;
+    height: 40px;
+    background-color: cadetblue;
+    text-align: center;
+    align-content: center;
+    border-radius: 0.3rem;
+    transition: all 1s ease-in-out 0s;
+}
+
+#dtr3:hover{
+    transform: translateY(100px);
+    width: 110px;
+    height: 60px;
+    background-color: rgb(41, 67, 68);
+}
+
+
+#tr4{
+    grid-column: 1;
+    grid-row: 5;
+}
+
+#an1{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#an2{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#an3{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#an4{
+    grid-column: 2;
+    grid-row: 5;
+}
